@@ -3,8 +3,9 @@
 <%= render @list %>
 
 <div>
-  <%= link_to "Edit this list", edit_list_path(@list) %> |
   <%= link_to "Back to lists", lists_path %>
+  <%= link_to "add movies", new_list_bookmark_path(@list) %>
+
 
   <%= button_to "Destroy this list", @list, method: :delete %>
 </div>

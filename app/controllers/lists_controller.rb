@@ -1,5 +1,5 @@
 class ListsController < ApplicationController
-  before_action :set_list, only: %i[ show edit update destroy ]
+  before_action :set_list, only: %i[ show update destroy ]
 
   # GET /lists or /lists.json
   def index
@@ -15,9 +15,6 @@ class ListsController < ApplicationController
     @list = List.new
   end
 
-  # GET /lists/1/edit
-  def edit
-  end
 
   # POST /lists or /lists.json
   def create
